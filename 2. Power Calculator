@@ -11,9 +11,9 @@ What is the output of each recursive call?
 
 powerCalculator(base, exponent) {
 If (exponent < 0) {
-Return exponent should be >= 0;
+Return "exponent should be >= 0";
 }
-Return base^exponent
+Return base^exponent;
 }
 
 
