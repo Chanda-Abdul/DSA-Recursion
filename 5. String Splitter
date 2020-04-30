@@ -1,0 +1,9 @@
+Write a recursive function that splits a string based on a separator (similar to String.prototype.split). Don't use JS array's split function to solve this problem.
+
+Input: 02/20/2020
+Output: ["02", "20", "2020"]
+
+What is the input to the program? 02/20/2020
+What is the output of the program? ["02", "20", "2020"]
+What is the input to each recursive call? For the function you would tell it to get all numbers up to the separator and create a string, if there is still data after the separator repeat the function until there is no data left
+What is the output of each recursive call? The input separated without the separators
