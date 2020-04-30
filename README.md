@@ -6,7 +6,7 @@ You must use recursion to solve these problems.
 
 It's possible to solve them non-recursively and you'll probably be tempted to use tools that you already understand. However, that defeats the purpose of this exercise, which is to become more comfortable using recursion.
 
-Tips and resources
+##### Tips and resources
 
 For each of these exercises, without using any code, you are expected to identify the following:
 
