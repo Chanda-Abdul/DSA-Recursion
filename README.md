@@ -8,13 +8,13 @@ It's possible to solve them non-recursively and you'll probably be tempted to us
 
 ##### Tips and resources
 
-For each of these exercises, without using any code, you are expected to identify the following:
+For each of these exercises, without using any code, you are expected to identify the following:<br><br>
 
-What is the input to the program?
-What is the output of the program?
-What is the input to each recursive call?
-What is the output of each recursive call?
-Start each problem by understanding the problem and coming up with some sample input and output. In some of the drills we have provided sample inputs and outputs for your convenience.
+What is the input to the program?<br>
+What is the output of the program?<br>
+What is the input to each recursive call?<br>
+What is the output of each recursive call?<br>
+Start each problem by understanding the problem and coming up with some sample input and output. In some of the drills we have provided sample inputs and outputs for your convenience.<br>
 
 ## 1. Counting Sheep
 Write a recursive function that counts how many sheep jump over the fence. Your program should take a number as input. That number should be the number of sheep you have. The function should display the number along with the message "Another sheep jumps over the fence" until no more sheep are left.
