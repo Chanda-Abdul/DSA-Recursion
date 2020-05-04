@@ -32,15 +32,15 @@ What is the output of each recursive call?
 
 
 
-const allTheSheep = function howMany(sheep)  {
+function howMany(sheep)  {
 //base case
 if (sheep === 0) {
-Return “all sheep jumped over the fence”;
+return (`all sheep jumped over the fence`);
 }
 //general case
-return sheep: “Another sheep jumps over the fence”;
-Let sheep = sheep - 1
-Return Sheep + howMany(sheep) 
+return sheep + howMany(sheep - 1) + ("Another sheep jumps over the fence");
 }
 
-let sheep = 3
+
+let shp = 3
+console.log(howMany(shp))
