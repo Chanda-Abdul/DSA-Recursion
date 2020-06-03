@@ -9,12 +9,28 @@ What is the input to each recursive call?
 What is the output of each recursive call? 
 
 
-powerCalculator(base, exponent) {
-If (exponent < 0) {
-Return "exponent should be >= 0";
-}
-Return base^exponent;
+const powerCalculator = function(base, exponent) {
+  //Base case
+  if (exponent <= 0) {
+    console.log(`exponent should be >= 0`)
+  } else {
+  //General Case
+  console.log(base**exponent)
+    exponent--
+  powerCalculator(base, exponent)
+  }
 }
 
+let shouldbe100 = powerCalculator(10, 2)
 
-**How can I make this recursive?
+What is the input to the program?10, 2 
+What is the output of the program? 100, 10, exponent should be >= 0
+What is the input to each recursive call? (10, 2) then (10, 1), then (10, 0)
+What is the output of each recursive call? 100, 10, exponent should be >= 0
+
+let shouldbemorethanzero = powerCalculator(10, -2)
+
+What is the input to the program? (10, -2) 
+What is the output of the program? exponent should be >= 0
+What is the input to each recursive call? (10, -2) 
+What is the output of each recursive call? exponent should be >= 0
