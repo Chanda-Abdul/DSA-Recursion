@@ -1,16 +1,36 @@
-Write a function that reverses a string. Take a string as input, reverse the string, and return the new string.
+# Write a function that reverses a string. Take a string as input, reverse the string, and return the new string.
 
 
-What is the input to the program? purple
-What is the output of the program? elprup
-What is the input to each recursive call?
-What is the output of each recursive call? 
+## What is the input to the program? 
+[1, 2, 3, 4]
 
-const backwardsString = Function reverseString(string)
-{
-If string.length = 0 || string !== string {
-return “please enter a string”;
+## What is the output of the program? 
+'4321'
+## What is the input to each recursive call?
+[1, 2, 3, 4]
+[1, 2, 3]
+[1, 2]
+[1]
+## What is the output of each recursive call?
+4
+3
+2
+1
+
+````
+const reverseString = function(string) {
+  //Base case
+if (string.length <= 1) {
+return string;
 }
-Return indexOf(string.length)
+  //recursive case
+return string[string.length - 1] + reverseString(string.slice(0, -1))
 }
+
+
+
+let forwards = [1, 2, 3, 4]
+
+console.log(reverseString(forwards));
+````
 
