@@ -7,3 +7,18 @@ What is the input to the program? 02/20/2020
 What is the output of the program? ["02", "20", "2020"]
 What is the input to each recursive call? For the function you would tell it to get all numbers up to the separator and create a string, if there is still data after the separator repeat the function until there is no data left
 What is the output of each recursive call? The input separated without the separators
+
+const splitString = function(string, separator) {
+  //Base case
+if (!string) {
+return '';
+}
+  //recursive case
+  let curr = string[0]
+  if (curr == separator) {
+    curr = ''
+  }
+  return curr + splitString(string.slice(1), separator)
+}
+
+console.log(splitString("02/20/2020", "/"));
